@@ -11,12 +11,12 @@ class Speedtest:
     @commands.command(pass_context=True)
     @commands.cooldown(1, 3600)
     async def speedtest(self):
-        """SPEEEEEEEEED"""  
-        await self.bot.say(":warning: SPEED TESTING")
+        """Test host speed!"""  
+        await self.bot.say(":warning: SPEED TESTING :warning:")
         await self.bot.say("This may cause disruption to the bot temporarily. This may take a while...") 
-        x = subprocess.check_output("speedtest-cli --secure --simple", shell=True).decode()
-        message = x
-        message = '```{}```'.format(x)
+        speedresult = subprocess.check_output("speedtest-cli --secure --simple", shell=True).decode()
+        message = speedresult
+        message = '```{}```'.format(speedresult)
         await self.bot.say(message)
 
 def setup(bot):
