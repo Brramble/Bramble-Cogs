@@ -18,7 +18,7 @@ class Speedtest:
         if self.bot.is_voice_connected(server):
             await self.bot.say("You must make me leave the voice channel before I do my test.")
         else:
-            await self.bot.say("Warning: This may cause disruption to the bot temporarily and may take a while...")
+            await self.bot.say(":Warning: This may cause disruption to the bot temporarily and may take a while...")
             speedresult = subprocess.check_output("speedtest-cli --secure --simple", shell=True).decode()
             em = discord.Embed(colour=0xEC2323, timestamp=__import__('datetime').datetime.utcnow())
             em.set_thumbnail(url=self.bot.user.avatar_url)
