@@ -1,9 +1,0 @@
-{
-	    "AUTHOR" : "Bramble and FishyFing",
-	    "SHORT" : "Show server speeds!",
-	    "DESCRIPTION" : "Show the internet speeds of the server the instance is hosted on!",
-	    "DISABLED" : false,
-	    "NAME" : "speedtest",
-	    "TAGS" : ["speed", "speedtest", "internet"],
-	    "INSTALL_MSG" : "You just installed **Speedtest.py**! \n\nThank you for install my cog. This cog may be very buggy and is still has issues with it.\n\nBramble."
-	}
